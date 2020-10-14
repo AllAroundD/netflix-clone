@@ -14,7 +14,7 @@ function Banner() {
         fetchData()
     }, [])
 
-    console.log(movie);
+    // console.log(movie);
 
     // add ... if text is too long
     function truncate(str, n) {
