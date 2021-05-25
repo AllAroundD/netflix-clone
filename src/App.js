@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
-import Row from './Row'
-import requests from './requests'
-import Banner from './Banner'
-import Nav from './Nav'
+import React from "react";
+import requests from "./requests";
+import Row from "./components/Row";
+import Banner from "./components/Banner";
+import Nav from "./components/Nav";
+import "./App.css";
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-
     </div>
   );
 }

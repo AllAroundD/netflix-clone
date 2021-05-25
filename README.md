@@ -1,1 +1,1 @@
-This project is a small clone of Netflix
+This project is just a small clone of Netflix landing page
