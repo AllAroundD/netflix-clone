@@ -3,7 +3,7 @@ import axios from "../axios";
 import requests from "../requests";
 import "./Banner.css";
 
-function Banner() {
+const Banner = () => {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -21,9 +21,9 @@ function Banner() {
   // console.log(movie);
 
   // add ... if text is too long
-  function truncate(str = "", n) {
+  const truncate = (str = "", n) => {
     return str.length > n ? str.substr(0, n - 1) + "..." : str;
-  }
+  };
 
   return (
     <header
@@ -50,6 +50,6 @@ function Banner() {
       <div className="banner--fadeBottom" />
     </header>
   );
-}
+};
 
 export default Banner;
